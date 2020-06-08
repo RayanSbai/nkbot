@@ -23,7 +23,7 @@ client.on("ready", () =>
   client.user.setActivity("NK LIVE", {type: 'STREAMING', url : 'https://www.twitch.tv/saqr_nk'}).catch(console.error);
 });
 
-client.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 })
 
