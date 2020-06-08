@@ -2,6 +2,7 @@ const express  = require('express');
 const app      = express();
 const Discord  = require("discord.js");
 const client   = new Discord.Client();
+const PORT = process.env.port || 4000
 
 // lowdb
 const low = require("lowdb");
@@ -21,6 +22,10 @@ client.on("ready", () =>
   console.log("Bot is up and running!");
   client.user.setActivity("NK LIVE", {type: 'STREAMING', url : 'https://www.twitch.tv/saqr_nk'}).catch(console.error);
 });
+
+client.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`)
+})
 
 // On receiving a message
 client.on("message", message =>
