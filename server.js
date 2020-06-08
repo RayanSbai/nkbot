@@ -47,4 +47,4 @@ client.on("guildMemberAdd", member =>
 require("./reactions.js").run(client);
 
 // Login Discord Bot
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.token);
