@@ -48,8 +48,6 @@ client.on("guildMemberAdd", member =>
   catch (err) { console.log(err); }
 });
 
-// Reaction Roles
-require("./reactions.js").run(client);
 
 // Login Discord Bot
 client.login(process.env.token);
