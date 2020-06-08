@@ -24,7 +24,7 @@ client.on("ready", () =>
 });
 
 client.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`)
+  console.log(`Server listening on port ${PORT}`);
 })
 
 // On receiving a message
